@@ -175,7 +175,7 @@ function Ball() {
         currentNote = SONG.shift();
         const key = noteVectors[currentNote.note];
         this.vel = p5.Vector.sub(key, this.pos);
-        this.vel.mult(0.1);
+        this.vel.mult(0.12);
       }
       else {
         return false;
